@@ -1,0 +1,40 @@
+{
+  "name": "kettasoft/pass-audit",
+  "description": "PassAudit is a powerful and efficient Laravel package designed to enhance the security of user passwords in your application. This package provides a comprehensive solution to prevent users from reusing their previous passwords, thereby mitigating the risk of unauthorized access.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Kettasoft\\PassAudit\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kettasoft\\PassAudit\\Tests\\": "tests/",
+      "Kettasoft\\PassAudit\\Tests\\Database\\Factories\\": "tests/database/factories/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Abdalrhman Emad Saad",
+      "email": "kettasoft@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require-dev": {
+    "laravel/framework": "^10",
+    "pestphp/pest": "2.x-dev",
+    "orchestra/testbench": "^8.0",
+    "mockery/mockery": "1.6.x-dev"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/pest --configuration=phpunit.xml"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
