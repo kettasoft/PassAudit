@@ -22,14 +22,21 @@ return [
     */
     'middleware' => [
         /**
-         * Define if the laratrust middleware are registered automatically in the service provider.
+         * Define if the PassAudit middleware are registered automatically in the service provider.
          */
         'register' => true,
 
         /**
          * Method to be called in the middleware return case.
-         * Available: abort|redirect.
+         * Available: http|api.
          */
         'handling' => 'abort',
+    ],
+
+    'rule' => [
+        /**
+         * Add a custom message to show when any user's old password is found.
+         */
+        'message' => 'This password is already in use. Please use a stronger password'
     ]
 ];

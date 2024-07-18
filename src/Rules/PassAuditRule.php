@@ -2,9 +2,8 @@
 
 namespace Kettasoft\PassAudit\Rules;
 
-use Closure;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Contracts\Validation\Rule;
-use Illuminate\Contracts\Validation\ValidationRule;
 
 class PassAuditRule extends PassAuditRuleChecker implements Rule
 {
@@ -27,5 +26,6 @@ class PassAuditRule extends PassAuditRuleChecker implements Rule
      */
     public function message()
     {
+        return Config::get('passaudit.rule.message');
     }
 }
