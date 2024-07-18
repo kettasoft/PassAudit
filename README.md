@@ -19,7 +19,7 @@ PassAudit is a powerful and efficient Laravel package designed to enhance the se
 You can install the package via Composer:
 
 ```bash
-composer require kettasoft/PassAudit
+composer require kettasoft/pass-audit
 ```
 
 ## Configuration
